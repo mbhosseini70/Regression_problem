@@ -1,0 +1,1383 @@
+2023-10-13 17:08:06,402:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-13 17:08:06,403:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-13 17:08:06,403:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-13 17:08:06,403:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-13 17:08:24,696:INFO:PyCaret RegressionExperiment
+2023-10-13 17:08:24,697:INFO:Logging name: reg-default-name
+2023-10-13 17:08:24,697:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-10-13 17:08:24,697:INFO:version 3.1.0
+2023-10-13 17:08:24,697:INFO:Initializing setup()
+2023-10-13 17:08:24,697:INFO:self.USI: 3c9f
+2023-10-13 17:08:24,697:INFO:self._variable_keys: {'gpu_param', 'fold_groups_param', 'memory', 'seed', 'pipeline', 'logging_param', 'fold_generator', 'y', 'target_param', 'X_train', 'data', '_ml_usecase', 'y_test', 'n_jobs_param', 'y_train', 'transform_target_param', 'gpu_n_jobs_param', '_available_plots', 'idx', 'X', 'USI', 'html_param', 'fold_shuffle_param', 'exp_name_log', 'X_test', 'exp_id', 'log_plots_param'}
+2023-10-13 17:08:24,697:INFO:Checking environment
+2023-10-13 17:08:24,697:INFO:python_version: 3.10.12
+2023-10-13 17:08:24,697:INFO:python_build: ('main', 'Jun 23 2023 22:40:32')
+2023-10-13 17:08:24,698:INFO:machine: x86_64
+2023-10-13 17:08:24,698:INFO:platform: Linux-6.1.42+-x86_64-with-glibc2.31
+2023-10-13 17:08:24,698:INFO:Memory: svmem(total=33666113536, available=32199168000, percent=4.4, used=988971008, free=23760396288, active=1610760192, inactive=7495368704, buffers=1271455744, cached=7645290496, shared=901120, slab=649150464)
+2023-10-13 17:08:24,699:INFO:Physical Core: 2
+2023-10-13 17:08:24,699:INFO:Logical Core: 4
+2023-10-13 17:08:24,699:INFO:Checking libraries
+2023-10-13 17:08:24,699:INFO:System:
+2023-10-13 17:08:24,699:INFO:    python: 3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:40:32) [GCC 12.3.0]
+2023-10-13 17:08:24,699:INFO:executable: /opt/conda/bin/python3.10
+2023-10-13 17:08:24,699:INFO:   machine: Linux-6.1.42+-x86_64-with-glibc2.31
+2023-10-13 17:08:24,699:INFO:PyCaret required dependencies:
+2023-10-13 17:08:24,702:INFO:                 pip: 23.1.2
+2023-10-13 17:08:24,702:INFO:          setuptools: 68.0.0
+2023-10-13 17:08:24,702:INFO:             pycaret: 3.1.0
+2023-10-13 17:08:24,702:INFO:             IPython: 8.14.0
+2023-10-13 17:08:24,702:INFO:          ipywidgets: 7.7.1
+2023-10-13 17:08:24,702:INFO:                tqdm: 4.66.1
+2023-10-13 17:08:24,702:INFO:               numpy: 1.23.5
+2023-10-13 17:08:24,702:INFO:              pandas: 1.5.3
+2023-10-13 17:08:24,702:INFO:              jinja2: 3.1.2
+2023-10-13 17:08:24,703:INFO:               scipy: 1.10.1
+2023-10-13 17:08:24,703:INFO:              joblib: 1.3.2
+2023-10-13 17:08:24,703:INFO:             sklearn: 1.2.2
+2023-10-13 17:08:24,703:INFO:                pyod: 1.1.0
+2023-10-13 17:08:24,703:INFO:            imblearn: 0.11.0
+2023-10-13 17:08:24,703:INFO:   category_encoders: 2.6.2
+2023-10-13 17:08:24,703:INFO:            lightgbm: 3.3.2
+2023-10-13 17:08:24,703:INFO:               numba: 0.57.1
+2023-10-13 17:08:24,703:INFO:            requests: 2.31.0
+2023-10-13 17:08:24,703:INFO:          matplotlib: 3.7.2
+2023-10-13 17:08:24,703:INFO:          scikitplot: 0.3.7
+2023-10-13 17:08:24,703:INFO:         yellowbrick: 1.5
+2023-10-13 17:08:24,703:INFO:              plotly: 5.15.0
+2023-10-13 17:08:24,703:INFO:    plotly-resampler: Not installed
+2023-10-13 17:08:24,703:INFO:             kaleido: 0.2.1
+2023-10-13 17:08:24,703:INFO:           schemdraw: 0.15
+2023-10-13 17:08:24,703:INFO:         statsmodels: 0.14.0
+2023-10-13 17:08:24,703:INFO:              sktime: 0.21.1
+2023-10-13 17:08:24,703:INFO:               tbats: 1.1.3
+2023-10-13 17:08:24,703:INFO:            pmdarima: 2.0.3
+2023-10-13 17:08:24,703:INFO:              psutil: 5.9.3
+2023-10-13 17:08:24,703:INFO:          markupsafe: 2.1.3
+2023-10-13 17:08:24,703:INFO:             pickle5: Not installed
+2023-10-13 17:08:24,703:INFO:         cloudpickle: 2.2.1
+2023-10-13 17:08:24,703:INFO:         deprecation: 2.1.0
+2023-10-13 17:08:24,703:INFO:              xxhash: 3.3.0
+2023-10-13 17:08:24,703:INFO:           wurlitzer: 3.0.3
+2023-10-13 17:08:24,703:INFO:PyCaret optional dependencies:
+2023-10-13 17:08:25,121:INFO:                shap: 0.42.1
+2023-10-13 17:08:25,121:INFO:           interpret: Not installed
+2023-10-13 17:08:25,121:INFO:                umap: 0.5.3
+2023-10-13 17:08:25,121:INFO:     ydata_profiling: 4.3.1
+2023-10-13 17:08:25,121:INFO:  explainerdashboard: Not installed
+2023-10-13 17:08:25,121:INFO:             autoviz: 0.1.730
+2023-10-13 17:08:25,121:INFO:           fairlearn: Not installed
+2023-10-13 17:08:25,121:INFO:          deepchecks: Not installed
+2023-10-13 17:08:25,121:INFO:             xgboost: 1.7.6
+2023-10-13 17:08:25,121:INFO:            catboost: 1.2.1
+2023-10-13 17:08:25,121:INFO:              kmodes: 0.12.2
+2023-10-13 17:08:25,121:INFO:             mlxtend: 0.22.0
+2023-10-13 17:08:25,121:INFO:       statsforecast: Not installed
+2023-10-13 17:08:25,121:INFO:        tune_sklearn: Not installed
+2023-10-13 17:08:25,121:INFO:                 ray: 2.5.1
+2023-10-13 17:08:25,121:INFO:            hyperopt: 0.2.7
+2023-10-13 17:08:25,121:INFO:              optuna: 3.3.0
+2023-10-13 17:08:25,121:INFO:               skopt: 0.9.0
+2023-10-13 17:08:25,121:INFO:              mlflow: Not installed
+2023-10-13 17:08:25,121:INFO:              gradio: Not installed
+2023-10-13 17:08:25,121:INFO:             fastapi: 0.98.0
+2023-10-13 17:08:25,121:INFO:             uvicorn: 0.22.0
+2023-10-13 17:08:25,121:INFO:              m2cgen: Not installed
+2023-10-13 17:08:25,121:INFO:           evidently: Not installed
+2023-10-13 17:08:25,121:INFO:               fugue: Not installed
+2023-10-13 17:08:25,122:INFO:           streamlit: Not installed
+2023-10-13 17:08:25,122:INFO:             prophet: 1.1.1
+2023-10-13 17:08:25,122:INFO:None
+2023-10-13 17:08:25,122:INFO:Set up data.
+2023-10-13 17:08:25,131:INFO:Set up folding strategy.
+2023-10-13 17:08:25,131:INFO:Set up train/test split.
+2023-10-13 17:08:25,137:INFO:Set up index.
+2023-10-13 17:08:25,138:INFO:Assigning column types.
+2023-10-13 17:08:25,142:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-10-13 17:08:25,143:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,147:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,152:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,216:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,263:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,264:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:25,267:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:25,268:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,273:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,277:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,339:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,385:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,386:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:25,389:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:25,390:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-10-13 17:08:25,394:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,399:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,460:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,507:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,508:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:25,511:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:25,516:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,521:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,582:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,629:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,630:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:25,632:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:25,633:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2023-10-13 17:08:25,642:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,703:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,750:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,751:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:25,754:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:25,766:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,826:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,873:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,873:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:25,876:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:25,877:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2023-10-13 17:08:25,948:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,995:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-10-13 17:08:25,995:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:25,998:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:26,073:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-10-13 17:08:26,119:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-10-13 17:08:26,120:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:26,123:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:26,123:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-10-13 17:08:26,194:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-10-13 17:08:26,240:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:26,243:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:26,313:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-10-13 17:08:26,361:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:26,363:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:26,364:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2023-10-13 17:08:26,482:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:26,485:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:26,602:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:26,605:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:26,608:INFO:Preparing preprocessing pipeline...
+2023-10-13 17:08:26,608:INFO:Set up simple imputation.
+2023-10-13 17:08:26,612:INFO:Set up encoding of categorical features.
+2023-10-13 17:08:26,613:INFO:Set up removing outliers.
+2023-10-13 17:08:26,687:INFO:Finished creating preprocessing pipeline.
+2023-10-13 17:08:26,699:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Area', 'Room'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Address'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Address'],
+                                    transformer=TargetEncoder(cols=['Address'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=1)))])
+2023-10-13 17:08:26,700:INFO:Creating final display dataframe.
+2023-10-13 17:08:28,096:INFO:Setup _display_container:                     Description             Value
+0                    Session id                 1
+1                        Target             Price
+2                   Target type        Regression
+3           Original data shape         (3456, 7)
+4        Transformed data shape         (3335, 7)
+5   Transformed train set shape         (2298, 7)
+6    Transformed test set shape         (1037, 7)
+7              Numeric features                 2
+8          Categorical features                 1
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13     Maximum one-hot encoding                25
+14              Encoding method              None
+15              Remove outliers              True
+16           Outliers threshold                 0
+17               Fold Generator             KFold
+18                  Fold Number                10
+19                     CPU Jobs                -1
+20                      Use GPU             False
+21               Log Experiment             False
+22              Experiment Name  reg-default-name
+23                          USI              3c9f
+2023-10-13 17:08:28,282:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:28,285:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:28,403:INFO:Soft dependency imported: xgboost: 1.7.6
+2023-10-13 17:08:28,406:INFO:Soft dependency imported: catboost: 1.2.1
+2023-10-13 17:08:28,407:INFO:setup() successfully completed in 3.71s...............
+2023-10-13 17:08:28,415:INFO:Initializing compare_models()
+2023-10-13 17:08:28,415:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, include=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2023-10-13 17:08:28,415:INFO:Checking exceptions
+2023-10-13 17:08:28,418:INFO:Preparing display monitor
+2023-10-13 17:08:28,454:INFO:Initializing Linear Regression
+2023-10-13 17:08:28,454:INFO:Total runtime is 2.952416737874349e-06 minutes
+2023-10-13 17:08:28,458:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:28,458:INFO:Initializing create_model()
+2023-10-13 17:08:28,458:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:28,459:INFO:Checking exceptions
+2023-10-13 17:08:28,459:INFO:Importing libraries
+2023-10-13 17:08:28,459:INFO:Copying training dataset
+2023-10-13 17:08:28,465:INFO:Defining folds
+2023-10-13 17:08:28,465:INFO:Declaring metric variables
+2023-10-13 17:08:28,469:INFO:Importing untrained model
+2023-10-13 17:08:28,472:INFO:Linear Regression Imported successfully
+2023-10-13 17:08:28,481:INFO:Starting cross validation
+2023-10-13 17:08:28,515:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:32,848:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:33,087:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:33,095:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:33,346:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:33,668:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:33,970:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:33,979:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:34,233:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:34,408:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:34,652:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:34,899:INFO:Calculating mean and std
+2023-10-13 17:08:34,904:INFO:Creating metrics dataframe
+2023-10-13 17:08:34,912:INFO:Uploading results into container
+2023-10-13 17:08:34,913:INFO:Uploading model into container now
+2023-10-13 17:08:34,914:INFO:_master_model_container: 1
+2023-10-13 17:08:34,914:INFO:_display_container: 2
+2023-10-13 17:08:34,914:INFO:LinearRegression(n_jobs=-1)
+2023-10-13 17:08:34,914:INFO:create_model() successfully completed......................................
+2023-10-13 17:08:35,144:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:08:35,144:INFO:Creating metrics dataframe
+2023-10-13 17:08:35,155:INFO:Initializing Lasso Regression
+2023-10-13 17:08:35,155:INFO:Total runtime is 0.1116859515508016 minutes
+2023-10-13 17:08:35,160:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:35,160:INFO:Initializing create_model()
+2023-10-13 17:08:35,160:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:35,161:INFO:Checking exceptions
+2023-10-13 17:08:35,161:INFO:Importing libraries
+2023-10-13 17:08:35,161:INFO:Copying training dataset
+2023-10-13 17:08:35,168:INFO:Defining folds
+2023-10-13 17:08:35,168:INFO:Declaring metric variables
+2023-10-13 17:08:35,172:INFO:Importing untrained model
+2023-10-13 17:08:35,176:INFO:Lasso Regression Imported successfully
+2023-10-13 17:08:35,184:INFO:Starting cross validation
+2023-10-13 17:08:35,194:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:35,523:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:35,530:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:35,535:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:35,570:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:35,867:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.166e+22, tolerance: 8.324e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2023-10-13 17:08:35,867:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.853e+22, tolerance: 8.978e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2023-10-13 17:08:35,918:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.650e+22, tolerance: 7.968e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2023-10-13 17:08:36,206:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:36,219:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:36,239:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:36,283:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:36,551:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.316e+22, tolerance: 8.679e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2023-10-13 17:08:36,611:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.024e+22, tolerance: 7.634e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2023-10-13 17:08:36,786:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:36,792:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:37,013:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.729e+22, tolerance: 8.025e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2023-10-13 17:08:37,039:INFO:Calculating mean and std
+2023-10-13 17:08:37,041:INFO:Creating metrics dataframe
+2023-10-13 17:08:37,048:INFO:Uploading results into container
+2023-10-13 17:08:37,049:INFO:Uploading model into container now
+2023-10-13 17:08:37,049:INFO:_master_model_container: 2
+2023-10-13 17:08:37,050:INFO:_display_container: 2
+2023-10-13 17:08:37,050:INFO:Lasso(random_state=1)
+2023-10-13 17:08:37,050:INFO:create_model() successfully completed......................................
+2023-10-13 17:08:37,221:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:08:37,222:INFO:Creating metrics dataframe
+2023-10-13 17:08:37,233:INFO:Initializing Ridge Regression
+2023-10-13 17:08:37,234:INFO:Total runtime is 0.1463282267252604 minutes
+2023-10-13 17:08:37,238:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:37,239:INFO:Initializing create_model()
+2023-10-13 17:08:37,239:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:37,239:INFO:Checking exceptions
+2023-10-13 17:08:37,239:INFO:Importing libraries
+2023-10-13 17:08:37,239:INFO:Copying training dataset
+2023-10-13 17:08:37,247:INFO:Defining folds
+2023-10-13 17:08:37,247:INFO:Declaring metric variables
+2023-10-13 17:08:37,251:INFO:Importing untrained model
+2023-10-13 17:08:37,256:INFO:Ridge Regression Imported successfully
+2023-10-13 17:08:37,264:INFO:Starting cross validation
+2023-10-13 17:08:37,274:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:37,600:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:37,606:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:37,624:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:37,645:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:37,960:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:216: LinAlgWarning: Ill-conditioned matrix (rcond=3.39038e-21): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2023-10-13 17:08:37,980:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:216: LinAlgWarning: Ill-conditioned matrix (rcond=2.97722e-21): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2023-10-13 17:08:38,022:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:216: LinAlgWarning: Ill-conditioned matrix (rcond=2.58554e-21): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2023-10-13 17:08:38,030:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:216: LinAlgWarning: Ill-conditioned matrix (rcond=3.29005e-21): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2023-10-13 17:08:38,391:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:38,431:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:38,483:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:38,533:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:38,805:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:216: LinAlgWarning: Ill-conditioned matrix (rcond=3.41517e-21): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2023-10-13 17:08:38,834:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:216: LinAlgWarning: Ill-conditioned matrix (rcond=2.9891e-21): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2023-10-13 17:08:38,892:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:216: LinAlgWarning: Ill-conditioned matrix (rcond=3.03797e-21): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2023-10-13 17:08:38,918:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:216: LinAlgWarning: Ill-conditioned matrix (rcond=3.11363e-21): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2023-10-13 17:08:39,093:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:39,146:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:39,354:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:216: LinAlgWarning: Ill-conditioned matrix (rcond=3.09312e-21): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2023-10-13 17:08:39,385:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py:216: LinAlgWarning: Ill-conditioned matrix (rcond=3.32865e-21): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2023-10-13 17:08:39,421:INFO:Calculating mean and std
+2023-10-13 17:08:39,423:INFO:Creating metrics dataframe
+2023-10-13 17:08:39,427:INFO:Uploading results into container
+2023-10-13 17:08:39,428:INFO:Uploading model into container now
+2023-10-13 17:08:39,428:INFO:_master_model_container: 3
+2023-10-13 17:08:39,428:INFO:_display_container: 2
+2023-10-13 17:08:39,429:INFO:Ridge(random_state=1)
+2023-10-13 17:08:39,429:INFO:create_model() successfully completed......................................
+2023-10-13 17:08:39,606:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:08:39,606:INFO:Creating metrics dataframe
+2023-10-13 17:08:39,619:INFO:Initializing Elastic Net
+2023-10-13 17:08:39,619:INFO:Total runtime is 0.18609069188435873 minutes
+2023-10-13 17:08:39,626:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:39,626:INFO:Initializing create_model()
+2023-10-13 17:08:39,627:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:39,627:INFO:Checking exceptions
+2023-10-13 17:08:39,627:INFO:Importing libraries
+2023-10-13 17:08:39,627:INFO:Copying training dataset
+2023-10-13 17:08:39,634:INFO:Defining folds
+2023-10-13 17:08:39,634:INFO:Declaring metric variables
+2023-10-13 17:08:39,640:INFO:Importing untrained model
+2023-10-13 17:08:39,646:INFO:Elastic Net Imported successfully
+2023-10-13 17:08:39,654:INFO:Starting cross validation
+2023-10-13 17:08:39,665:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:39,998:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:40,120:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:40,145:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:40,149:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:40,491:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.853e+22, tolerance: 7.968e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2023-10-13 17:08:40,606:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.090e+22, tolerance: 8.978e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2023-10-13 17:08:40,961:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:40,970:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:40,980:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:41,002:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:41,343:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.899e+22, tolerance: 8.098e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2023-10-13 17:08:41,387:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.318e+22, tolerance: 8.679e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2023-10-13 17:08:41,736:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:41,768:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:42,067:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/linear_model/_coordinate_descent.py:631: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.953e+22, tolerance: 8.025e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2023-10-13 17:08:42,098:INFO:Calculating mean and std
+2023-10-13 17:08:42,100:INFO:Creating metrics dataframe
+2023-10-13 17:08:42,108:INFO:Uploading results into container
+2023-10-13 17:08:42,109:INFO:Uploading model into container now
+2023-10-13 17:08:42,110:INFO:_master_model_container: 4
+2023-10-13 17:08:42,110:INFO:_display_container: 2
+2023-10-13 17:08:42,111:INFO:ElasticNet(random_state=1)
+2023-10-13 17:08:42,111:INFO:create_model() successfully completed......................................
+2023-10-13 17:08:42,295:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:08:42,295:INFO:Creating metrics dataframe
+2023-10-13 17:08:42,308:INFO:Initializing Least Angle Regression
+2023-10-13 17:08:42,308:INFO:Total runtime is 0.2308990478515625 minutes
+2023-10-13 17:08:42,314:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:42,315:INFO:Initializing create_model()
+2023-10-13 17:08:42,315:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:42,315:INFO:Checking exceptions
+2023-10-13 17:08:42,315:INFO:Importing libraries
+2023-10-13 17:08:42,315:INFO:Copying training dataset
+2023-10-13 17:08:42,322:INFO:Defining folds
+2023-10-13 17:08:42,322:INFO:Declaring metric variables
+2023-10-13 17:08:42,327:INFO:Importing untrained model
+2023-10-13 17:08:42,334:INFO:Least Angle Regression Imported successfully
+2023-10-13 17:08:42,344:INFO:Starting cross validation
+2023-10-13 17:08:42,355:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:42,683:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:42,757:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:42,775:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:42,954:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:43,577:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:43,658:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:43,691:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:43,766:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:44,354:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:44,396:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:44,700:INFO:Calculating mean and std
+2023-10-13 17:08:44,704:INFO:Creating metrics dataframe
+2023-10-13 17:08:44,708:INFO:Uploading results into container
+2023-10-13 17:08:44,709:INFO:Uploading model into container now
+2023-10-13 17:08:44,710:INFO:_master_model_container: 5
+2023-10-13 17:08:44,710:INFO:_display_container: 2
+2023-10-13 17:08:44,710:INFO:Lars(random_state=1)
+2023-10-13 17:08:44,710:INFO:create_model() successfully completed......................................
+2023-10-13 17:08:44,890:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:08:44,890:INFO:Creating metrics dataframe
+2023-10-13 17:08:44,908:INFO:Initializing Lasso Least Angle Regression
+2023-10-13 17:08:44,909:INFO:Total runtime is 0.2742449283599854 minutes
+2023-10-13 17:08:44,913:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:44,914:INFO:Initializing create_model()
+2023-10-13 17:08:44,914:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:44,914:INFO:Checking exceptions
+2023-10-13 17:08:44,914:INFO:Importing libraries
+2023-10-13 17:08:44,914:INFO:Copying training dataset
+2023-10-13 17:08:44,925:INFO:Defining folds
+2023-10-13 17:08:44,925:INFO:Declaring metric variables
+2023-10-13 17:08:44,930:INFO:Importing untrained model
+2023-10-13 17:08:44,937:INFO:Lasso Least Angle Regression Imported successfully
+2023-10-13 17:08:44,945:INFO:Starting cross validation
+2023-10-13 17:08:44,955:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:45,353:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:45,375:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:45,390:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:45,506:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:46,140:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:46,143:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:46,177:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:46,359:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:46,916:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:46,937:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:47,284:INFO:Calculating mean and std
+2023-10-13 17:08:47,286:INFO:Creating metrics dataframe
+2023-10-13 17:08:47,290:INFO:Uploading results into container
+2023-10-13 17:08:47,291:INFO:Uploading model into container now
+2023-10-13 17:08:47,292:INFO:_master_model_container: 6
+2023-10-13 17:08:47,292:INFO:_display_container: 2
+2023-10-13 17:08:47,292:INFO:LassoLars(random_state=1)
+2023-10-13 17:08:47,292:INFO:create_model() successfully completed......................................
+2023-10-13 17:08:47,472:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:08:47,472:INFO:Creating metrics dataframe
+2023-10-13 17:08:47,488:INFO:Initializing Orthogonal Matching Pursuit
+2023-10-13 17:08:47,488:INFO:Total runtime is 0.31722908020019536 minutes
+2023-10-13 17:08:47,493:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:47,494:INFO:Initializing create_model()
+2023-10-13 17:08:47,494:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:47,494:INFO:Checking exceptions
+2023-10-13 17:08:47,494:INFO:Importing libraries
+2023-10-13 17:08:47,494:INFO:Copying training dataset
+2023-10-13 17:08:47,501:INFO:Defining folds
+2023-10-13 17:08:47,501:INFO:Declaring metric variables
+2023-10-13 17:08:47,506:INFO:Importing untrained model
+2023-10-13 17:08:47,511:INFO:Orthogonal Matching Pursuit Imported successfully
+2023-10-13 17:08:47,519:INFO:Starting cross validation
+2023-10-13 17:08:47,529:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:47,885:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:47,941:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:47,946:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:48,106:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:48,705:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:48,764:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:48,886:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:48,908:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:49,416:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:49,569:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:49,829:INFO:Calculating mean and std
+2023-10-13 17:08:49,833:INFO:Creating metrics dataframe
+2023-10-13 17:08:49,837:INFO:Uploading results into container
+2023-10-13 17:08:49,838:INFO:Uploading model into container now
+2023-10-13 17:08:49,840:INFO:_master_model_container: 7
+2023-10-13 17:08:49,840:INFO:_display_container: 2
+2023-10-13 17:08:49,840:INFO:OrthogonalMatchingPursuit()
+2023-10-13 17:08:49,840:INFO:create_model() successfully completed......................................
+2023-10-13 17:08:50,018:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:08:50,019:INFO:Creating metrics dataframe
+2023-10-13 17:08:50,032:INFO:Initializing Bayesian Ridge
+2023-10-13 17:08:50,033:INFO:Total runtime is 0.3596434791882833 minutes
+2023-10-13 17:08:50,037:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:50,038:INFO:Initializing create_model()
+2023-10-13 17:08:50,038:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:50,038:INFO:Checking exceptions
+2023-10-13 17:08:50,038:INFO:Importing libraries
+2023-10-13 17:08:50,038:INFO:Copying training dataset
+2023-10-13 17:08:50,045:INFO:Defining folds
+2023-10-13 17:08:50,046:INFO:Declaring metric variables
+2023-10-13 17:08:50,050:INFO:Importing untrained model
+2023-10-13 17:08:50,054:INFO:Bayesian Ridge Imported successfully
+2023-10-13 17:08:50,062:INFO:Starting cross validation
+2023-10-13 17:08:50,071:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:50,448:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:50,484:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:50,527:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:50,569:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:51,208:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:51,320:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:51,358:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:51,393:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:51,818:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:51,898:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:52,137:INFO:Calculating mean and std
+2023-10-13 17:08:52,140:INFO:Creating metrics dataframe
+2023-10-13 17:08:52,144:INFO:Uploading results into container
+2023-10-13 17:08:52,145:INFO:Uploading model into container now
+2023-10-13 17:08:52,146:INFO:_master_model_container: 8
+2023-10-13 17:08:52,146:INFO:_display_container: 2
+2023-10-13 17:08:52,146:INFO:BayesianRidge()
+2023-10-13 17:08:52,146:INFO:create_model() successfully completed......................................
+2023-10-13 17:08:52,328:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:08:52,328:INFO:Creating metrics dataframe
+2023-10-13 17:08:52,342:INFO:Initializing Passive Aggressive Regressor
+2023-10-13 17:08:52,342:INFO:Total runtime is 0.398136329650879 minutes
+2023-10-13 17:08:52,347:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:52,347:INFO:Initializing create_model()
+2023-10-13 17:08:52,348:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:52,348:INFO:Checking exceptions
+2023-10-13 17:08:52,348:INFO:Importing libraries
+2023-10-13 17:08:52,348:INFO:Copying training dataset
+2023-10-13 17:08:52,355:INFO:Defining folds
+2023-10-13 17:08:52,355:INFO:Declaring metric variables
+2023-10-13 17:08:52,360:INFO:Importing untrained model
+2023-10-13 17:08:52,365:INFO:Passive Aggressive Regressor Imported successfully
+2023-10-13 17:08:52,374:INFO:Starting cross validation
+2023-10-13 17:08:52,386:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:52,710:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:52,732:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:52,747:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:52,777:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:53,409:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:53,416:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:53,442:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:53,460:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:54,013:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:54,017:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:54,268:INFO:Calculating mean and std
+2023-10-13 17:08:54,269:INFO:Creating metrics dataframe
+2023-10-13 17:08:54,274:INFO:Uploading results into container
+2023-10-13 17:08:54,275:INFO:Uploading model into container now
+2023-10-13 17:08:54,275:INFO:_master_model_container: 9
+2023-10-13 17:08:54,275:INFO:_display_container: 2
+2023-10-13 17:08:54,276:INFO:PassiveAggressiveRegressor(random_state=1)
+2023-10-13 17:08:54,276:INFO:create_model() successfully completed......................................
+2023-10-13 17:08:54,451:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:08:54,451:INFO:Creating metrics dataframe
+2023-10-13 17:08:54,467:INFO:Initializing Huber Regressor
+2023-10-13 17:08:54,467:INFO:Total runtime is 0.43354974985122685 minutes
+2023-10-13 17:08:54,471:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:54,472:INFO:Initializing create_model()
+2023-10-13 17:08:54,472:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:54,472:INFO:Checking exceptions
+2023-10-13 17:08:54,472:INFO:Importing libraries
+2023-10-13 17:08:54,472:INFO:Copying training dataset
+2023-10-13 17:08:54,478:INFO:Defining folds
+2023-10-13 17:08:54,478:INFO:Declaring metric variables
+2023-10-13 17:08:54,482:INFO:Importing untrained model
+2023-10-13 17:08:54,487:INFO:Huber Regressor Imported successfully
+2023-10-13 17:08:54,495:INFO:Starting cross validation
+2023-10-13 17:08:54,504:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:54,829:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:54,843:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:54,849:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:54,869:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:55,508:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:55,520:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:55,537:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:55,569:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:56,092:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:56,092:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:56,335:INFO:Calculating mean and std
+2023-10-13 17:08:56,337:INFO:Creating metrics dataframe
+2023-10-13 17:08:56,342:INFO:Uploading results into container
+2023-10-13 17:08:56,342:INFO:Uploading model into container now
+2023-10-13 17:08:56,343:INFO:_master_model_container: 10
+2023-10-13 17:08:56,343:INFO:_display_container: 2
+2023-10-13 17:08:56,343:INFO:HuberRegressor()
+2023-10-13 17:08:56,343:INFO:create_model() successfully completed......................................
+2023-10-13 17:08:56,523:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:08:56,523:INFO:Creating metrics dataframe
+2023-10-13 17:08:56,538:INFO:Initializing K Neighbors Regressor
+2023-10-13 17:08:56,539:INFO:Total runtime is 0.468075974782308 minutes
+2023-10-13 17:08:56,543:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:56,544:INFO:Initializing create_model()
+2023-10-13 17:08:56,544:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:56,544:INFO:Checking exceptions
+2023-10-13 17:08:56,544:INFO:Importing libraries
+2023-10-13 17:08:56,544:INFO:Copying training dataset
+2023-10-13 17:08:56,551:INFO:Defining folds
+2023-10-13 17:08:56,551:INFO:Declaring metric variables
+2023-10-13 17:08:56,559:INFO:Importing untrained model
+2023-10-13 17:08:56,564:INFO:K Neighbors Regressor Imported successfully
+2023-10-13 17:08:56,575:INFO:Starting cross validation
+2023-10-13 17:08:56,587:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:56,916:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:56,927:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:56,952:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:56,977:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:57,601:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:57,624:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:57,639:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:57,676:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:58,175:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:58,193:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:58,460:INFO:Calculating mean and std
+2023-10-13 17:08:58,461:INFO:Creating metrics dataframe
+2023-10-13 17:08:58,466:INFO:Uploading results into container
+2023-10-13 17:08:58,466:INFO:Uploading model into container now
+2023-10-13 17:08:58,467:INFO:_master_model_container: 11
+2023-10-13 17:08:58,467:INFO:_display_container: 2
+2023-10-13 17:08:58,467:INFO:KNeighborsRegressor(n_jobs=-1)
+2023-10-13 17:08:58,467:INFO:create_model() successfully completed......................................
+2023-10-13 17:08:58,645:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:08:58,646:INFO:Creating metrics dataframe
+2023-10-13 17:08:58,663:INFO:Initializing Decision Tree Regressor
+2023-10-13 17:08:58,663:INFO:Total runtime is 0.5034789164861044 minutes
+2023-10-13 17:08:58,667:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:08:58,667:INFO:Initializing create_model()
+2023-10-13 17:08:58,667:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:08:58,667:INFO:Checking exceptions
+2023-10-13 17:08:58,668:INFO:Importing libraries
+2023-10-13 17:08:58,668:INFO:Copying training dataset
+2023-10-13 17:08:58,674:INFO:Defining folds
+2023-10-13 17:08:58,674:INFO:Declaring metric variables
+2023-10-13 17:08:58,678:INFO:Importing untrained model
+2023-10-13 17:08:58,684:INFO:Decision Tree Regressor Imported successfully
+2023-10-13 17:08:58,693:INFO:Starting cross validation
+2023-10-13 17:08:58,703:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:08:59,027:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:59,046:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:59,047:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:59,072:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:59,714:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:59,718:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:59,744:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:08:59,765:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:00,282:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:00,289:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:00,539:INFO:Calculating mean and std
+2023-10-13 17:09:00,541:INFO:Creating metrics dataframe
+2023-10-13 17:09:00,545:INFO:Uploading results into container
+2023-10-13 17:09:00,546:INFO:Uploading model into container now
+2023-10-13 17:09:00,546:INFO:_master_model_container: 12
+2023-10-13 17:09:00,546:INFO:_display_container: 2
+2023-10-13 17:09:00,547:INFO:DecisionTreeRegressor(random_state=1)
+2023-10-13 17:09:00,547:INFO:create_model() successfully completed......................................
+2023-10-13 17:09:00,728:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:09:00,728:INFO:Creating metrics dataframe
+2023-10-13 17:09:00,745:INFO:Initializing Random Forest Regressor
+2023-10-13 17:09:00,745:INFO:Total runtime is 0.5381869832674663 minutes
+2023-10-13 17:09:00,751:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:09:00,751:INFO:Initializing create_model()
+2023-10-13 17:09:00,751:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:09:00,751:INFO:Checking exceptions
+2023-10-13 17:09:00,752:INFO:Importing libraries
+2023-10-13 17:09:00,752:INFO:Copying training dataset
+2023-10-13 17:09:00,758:INFO:Defining folds
+2023-10-13 17:09:00,759:INFO:Declaring metric variables
+2023-10-13 17:09:00,763:INFO:Importing untrained model
+2023-10-13 17:09:00,768:INFO:Random Forest Regressor Imported successfully
+2023-10-13 17:09:00,777:INFO:Starting cross validation
+2023-10-13 17:09:00,788:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:09:01,110:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:01,128:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:01,140:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:01,171:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:02,542:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:02,559:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:02,568:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:02,628:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:04,311:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:04,336:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:05,051:INFO:Calculating mean and std
+2023-10-13 17:09:05,053:INFO:Creating metrics dataframe
+2023-10-13 17:09:05,058:INFO:Uploading results into container
+2023-10-13 17:09:05,059:INFO:Uploading model into container now
+2023-10-13 17:09:05,059:INFO:_master_model_container: 13
+2023-10-13 17:09:05,059:INFO:_display_container: 2
+2023-10-13 17:09:05,060:INFO:RandomForestRegressor(n_jobs=-1, random_state=1)
+2023-10-13 17:09:05,060:INFO:create_model() successfully completed......................................
+2023-10-13 17:09:05,237:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:09:05,237:INFO:Creating metrics dataframe
+2023-10-13 17:09:05,252:INFO:Initializing Extra Trees Regressor
+2023-10-13 17:09:05,253:INFO:Total runtime is 0.6133079528808594 minutes
+2023-10-13 17:09:05,257:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:09:05,257:INFO:Initializing create_model()
+2023-10-13 17:09:05,258:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:09:05,258:INFO:Checking exceptions
+2023-10-13 17:09:05,258:INFO:Importing libraries
+2023-10-13 17:09:05,258:INFO:Copying training dataset
+2023-10-13 17:09:05,265:INFO:Defining folds
+2023-10-13 17:09:05,266:INFO:Declaring metric variables
+2023-10-13 17:09:05,271:INFO:Importing untrained model
+2023-10-13 17:09:05,278:INFO:Extra Trees Regressor Imported successfully
+2023-10-13 17:09:05,287:INFO:Starting cross validation
+2023-10-13 17:09:05,299:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:09:05,635:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:05,642:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:05,659:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:05,663:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:06,889:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:06,902:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:06,911:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:06,935:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:08,024:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:08,038:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:08,639:INFO:Calculating mean and std
+2023-10-13 17:09:08,641:INFO:Creating metrics dataframe
+2023-10-13 17:09:08,645:INFO:Uploading results into container
+2023-10-13 17:09:08,646:INFO:Uploading model into container now
+2023-10-13 17:09:08,647:INFO:_master_model_container: 14
+2023-10-13 17:09:08,647:INFO:_display_container: 2
+2023-10-13 17:09:08,648:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=1)
+2023-10-13 17:09:08,648:INFO:create_model() successfully completed......................................
+2023-10-13 17:09:08,826:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:09:08,826:INFO:Creating metrics dataframe
+2023-10-13 17:09:08,843:INFO:Initializing AdaBoost Regressor
+2023-10-13 17:09:08,844:INFO:Total runtime is 0.6731584509213765 minutes
+2023-10-13 17:09:08,848:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:09:08,848:INFO:Initializing create_model()
+2023-10-13 17:09:08,849:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:09:08,849:INFO:Checking exceptions
+2023-10-13 17:09:08,849:INFO:Importing libraries
+2023-10-13 17:09:08,849:INFO:Copying training dataset
+2023-10-13 17:09:08,856:INFO:Defining folds
+2023-10-13 17:09:08,856:INFO:Declaring metric variables
+2023-10-13 17:09:08,860:INFO:Importing untrained model
+2023-10-13 17:09:08,864:INFO:AdaBoost Regressor Imported successfully
+2023-10-13 17:09:08,871:INFO:Starting cross validation
+2023-10-13 17:09:08,881:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:09:09,210:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:09,214:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:09,242:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:09,250:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:10,017:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:10,048:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:10,075:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:10,113:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:10,717:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:10,773:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:11,123:INFO:Calculating mean and std
+2023-10-13 17:09:11,124:INFO:Creating metrics dataframe
+2023-10-13 17:09:11,128:INFO:Uploading results into container
+2023-10-13 17:09:11,129:INFO:Uploading model into container now
+2023-10-13 17:09:11,129:INFO:_master_model_container: 15
+2023-10-13 17:09:11,129:INFO:_display_container: 2
+2023-10-13 17:09:11,130:INFO:AdaBoostRegressor(random_state=1)
+2023-10-13 17:09:11,131:INFO:create_model() successfully completed......................................
+2023-10-13 17:09:11,302:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:09:11,302:INFO:Creating metrics dataframe
+2023-10-13 17:09:11,318:INFO:Initializing Gradient Boosting Regressor
+2023-10-13 17:09:11,318:INFO:Total runtime is 0.7143996795018513 minutes
+2023-10-13 17:09:11,324:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:09:11,324:INFO:Initializing create_model()
+2023-10-13 17:09:11,324:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:09:11,324:INFO:Checking exceptions
+2023-10-13 17:09:11,324:INFO:Importing libraries
+2023-10-13 17:09:11,324:INFO:Copying training dataset
+2023-10-13 17:09:11,332:INFO:Defining folds
+2023-10-13 17:09:11,332:INFO:Declaring metric variables
+2023-10-13 17:09:11,336:INFO:Importing untrained model
+2023-10-13 17:09:11,342:INFO:Gradient Boosting Regressor Imported successfully
+2023-10-13 17:09:11,350:INFO:Starting cross validation
+2023-10-13 17:09:11,359:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:09:11,667:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:11,694:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:11,704:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:11,727:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:12,542:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:12,579:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:12,593:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:12,607:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:13,311:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:13,328:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:13,730:INFO:Calculating mean and std
+2023-10-13 17:09:13,732:INFO:Creating metrics dataframe
+2023-10-13 17:09:13,740:INFO:Uploading results into container
+2023-10-13 17:09:13,741:INFO:Uploading model into container now
+2023-10-13 17:09:13,741:INFO:_master_model_container: 16
+2023-10-13 17:09:13,741:INFO:_display_container: 2
+2023-10-13 17:09:13,742:INFO:GradientBoostingRegressor(random_state=1)
+2023-10-13 17:09:13,742:INFO:create_model() successfully completed......................................
+2023-10-13 17:09:13,922:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:09:13,922:INFO:Creating metrics dataframe
+2023-10-13 17:09:13,938:INFO:Initializing Extreme Gradient Boosting
+2023-10-13 17:09:13,938:INFO:Total runtime is 0.7580625613530476 minutes
+2023-10-13 17:09:13,942:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:09:13,942:INFO:Initializing create_model()
+2023-10-13 17:09:13,942:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=xgboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:09:13,942:INFO:Checking exceptions
+2023-10-13 17:09:13,942:INFO:Importing libraries
+2023-10-13 17:09:13,942:INFO:Copying training dataset
+2023-10-13 17:09:13,950:INFO:Defining folds
+2023-10-13 17:09:13,951:INFO:Declaring metric variables
+2023-10-13 17:09:13,955:INFO:Importing untrained model
+2023-10-13 17:09:13,961:INFO:Extreme Gradient Boosting Imported successfully
+2023-10-13 17:09:13,970:INFO:Starting cross validation
+2023-10-13 17:09:13,980:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:09:14,345:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:14,358:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:14,358:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:14,381:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:15,279:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:15,298:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:15,305:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:15,330:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:16,088:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:16,108:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:16,485:INFO:Calculating mean and std
+2023-10-13 17:09:16,486:INFO:Creating metrics dataframe
+2023-10-13 17:09:16,491:INFO:Uploading results into container
+2023-10-13 17:09:16,492:INFO:Uploading model into container now
+2023-10-13 17:09:16,492:INFO:_master_model_container: 17
+2023-10-13 17:09:16,492:INFO:_display_container: 2
+2023-10-13 17:09:16,493:INFO:XGBRegressor(base_score=None, booster='gbtree', callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=100, n_jobs=-1, num_parallel_tree=None,
+             predictor=None, random_state=1, ...)
+2023-10-13 17:09:16,493:INFO:create_model() successfully completed......................................
+2023-10-13 17:09:16,674:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:09:16,674:INFO:Creating metrics dataframe
+2023-10-13 17:09:16,692:INFO:Initializing Light Gradient Boosting Machine
+2023-10-13 17:09:16,693:INFO:Total runtime is 0.8039757847785949 minutes
+2023-10-13 17:09:16,697:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:09:16,698:INFO:Initializing create_model()
+2023-10-13 17:09:16,698:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:09:16,698:INFO:Checking exceptions
+2023-10-13 17:09:16,698:INFO:Importing libraries
+2023-10-13 17:09:16,698:INFO:Copying training dataset
+2023-10-13 17:09:16,704:INFO:Defining folds
+2023-10-13 17:09:16,705:INFO:Declaring metric variables
+2023-10-13 17:09:16,709:INFO:Importing untrained model
+2023-10-13 17:09:16,715:INFO:Light Gradient Boosting Machine Imported successfully
+2023-10-13 17:09:16,725:INFO:Starting cross validation
+2023-10-13 17:09:16,736:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:09:18,160:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:18,208:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:18,211:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:18,304:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:19,680:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:19,697:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:19,706:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:19,774:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:21,366:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:21,371:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:21,956:INFO:Calculating mean and std
+2023-10-13 17:09:21,957:INFO:Creating metrics dataframe
+2023-10-13 17:09:21,963:INFO:Uploading results into container
+2023-10-13 17:09:21,964:INFO:Uploading model into container now
+2023-10-13 17:09:21,965:INFO:_master_model_container: 18
+2023-10-13 17:09:21,965:INFO:_display_container: 2
+2023-10-13 17:09:21,965:INFO:LGBMRegressor(random_state=1)
+2023-10-13 17:09:21,966:INFO:create_model() successfully completed......................................
+2023-10-13 17:09:22,145:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:09:22,145:INFO:Creating metrics dataframe
+2023-10-13 17:09:22,163:INFO:Initializing CatBoost Regressor
+2023-10-13 17:09:22,164:INFO:Total runtime is 0.8951598485310872 minutes
+2023-10-13 17:09:22,168:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:09:22,169:INFO:Initializing create_model()
+2023-10-13 17:09:22,169:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=catboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:09:22,169:INFO:Checking exceptions
+2023-10-13 17:09:22,169:INFO:Importing libraries
+2023-10-13 17:09:22,169:INFO:Copying training dataset
+2023-10-13 17:09:22,176:INFO:Defining folds
+2023-10-13 17:09:22,176:INFO:Declaring metric variables
+2023-10-13 17:09:22,182:INFO:Importing untrained model
+2023-10-13 17:09:22,191:INFO:CatBoost Regressor Imported successfully
+2023-10-13 17:09:22,200:INFO:Starting cross validation
+2023-10-13 17:09:22,210:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:09:25,002:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:25,007:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:25,012:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:25,034:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:31,200:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:31,214:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:31,226:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:31,249:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:36,977:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:36,983:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:39,450:INFO:Calculating mean and std
+2023-10-13 17:09:39,451:INFO:Creating metrics dataframe
+2023-10-13 17:09:39,457:INFO:Uploading results into container
+2023-10-13 17:09:39,458:INFO:Uploading model into container now
+2023-10-13 17:09:39,458:INFO:_master_model_container: 19
+2023-10-13 17:09:39,458:INFO:_display_container: 2
+2023-10-13 17:09:39,458:INFO:<catboost.core.CatBoostRegressor object at 0x7b170924f3a0>
+2023-10-13 17:09:39,458:INFO:create_model() successfully completed......................................
+2023-10-13 17:09:39,643:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:09:39,643:INFO:Creating metrics dataframe
+2023-10-13 17:09:39,660:INFO:Initializing Dummy Regressor
+2023-10-13 17:09:39,660:INFO:Total runtime is 1.18677153189977 minutes
+2023-10-13 17:09:39,665:INFO:SubProcess create_model() called ==================================
+2023-10-13 17:09:39,665:INFO:Initializing create_model()
+2023-10-13 17:09:39,665:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7b17092fbe50>, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:09:39,666:INFO:Checking exceptions
+2023-10-13 17:09:39,666:INFO:Importing libraries
+2023-10-13 17:09:39,666:INFO:Copying training dataset
+2023-10-13 17:09:39,673:INFO:Defining folds
+2023-10-13 17:09:39,673:INFO:Declaring metric variables
+2023-10-13 17:09:39,678:INFO:Importing untrained model
+2023-10-13 17:09:39,683:INFO:Dummy Regressor Imported successfully
+2023-10-13 17:09:39,693:INFO:Starting cross validation
+2023-10-13 17:09:39,703:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-13 17:09:40,546:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:40,548:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:40,554:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:40,576:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:42,355:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:42,361:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:42,366:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:42,372:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:43,772:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:43,782:WARNING:/opt/conda/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-10-13 17:09:44,270:INFO:Calculating mean and std
+2023-10-13 17:09:44,273:INFO:Creating metrics dataframe
+2023-10-13 17:09:44,277:INFO:Uploading results into container
+2023-10-13 17:09:44,278:INFO:Uploading model into container now
+2023-10-13 17:09:44,279:INFO:_master_model_container: 20
+2023-10-13 17:09:44,279:INFO:_display_container: 2
+2023-10-13 17:09:44,279:INFO:DummyRegressor()
+2023-10-13 17:09:44,279:INFO:create_model() successfully completed......................................
+2023-10-13 17:09:44,464:INFO:SubProcess create_model() end ==================================
+2023-10-13 17:09:44,464:INFO:Creating metrics dataframe
+2023-10-13 17:09:44,497:INFO:Initializing create_model()
+2023-10-13 17:09:44,497:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7b1713336320>, estimator=LGBMRegressor(random_state=1), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-10-13 17:09:44,497:INFO:Checking exceptions
+2023-10-13 17:09:44,500:INFO:Importing libraries
+2023-10-13 17:09:44,500:INFO:Copying training dataset
+2023-10-13 17:09:44,505:INFO:Defining folds
+2023-10-13 17:09:44,505:INFO:Declaring metric variables
+2023-10-13 17:09:44,506:INFO:Importing untrained model
+2023-10-13 17:09:44,506:INFO:Declaring custom model
+2023-10-13 17:09:44,506:INFO:Light Gradient Boosting Machine Imported successfully
+2023-10-13 17:09:44,516:INFO:Cross validation set to False
+2023-10-13 17:09:44,516:INFO:Fitting Model
+2023-10-13 17:09:45,827:INFO:LGBMRegressor(random_state=1)
+2023-10-13 17:09:45,827:INFO:create_model() successfully completed......................................
+2023-10-13 17:09:46,067:INFO:_master_model_container: 20
+2023-10-13 17:09:46,067:INFO:_display_container: 2
+2023-10-13 17:09:46,067:INFO:LGBMRegressor(random_state=1)
+2023-10-13 17:09:46,067:INFO:compare_models() successfully completed......................................
