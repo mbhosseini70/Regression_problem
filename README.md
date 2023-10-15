@@ -19,9 +19,13 @@ The Tehran House Price Prediction project involves several key steps to achieve 
 
 ## Files in the Repository
 1 - CatBoost_model.cbm and xgboost_model.pkl: These are the trained regression models saved from the notebook and used in the web application.
+
 2- app.py and functions.py: These two files contain the code for our simple web application.
+
 3- preprocessor.pkl: This is the preprocessor used for training, which should also be used in our web application for data preprocessing.
+
 4- requirements.txt: This file lists the libraries used in our virtual environment.
+
 5- tehran-house-price-prediction.ipynb the main code file.
 
 
